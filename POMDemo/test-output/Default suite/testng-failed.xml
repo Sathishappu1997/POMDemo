@@ -3,13 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.TestCases.OrangeHRM_Login_TestCase">
+      <class name="com.TestCases.DataDriven_Class">
         <methods>
-          <include name="Start"/>
-          <include name="Login"/>
-          <include name="teardown"/>
+          <include name="OrangeHRMLogin" invocation-numbers="0 1 2"/>
+          <include name="close"/>
+          <include name="start"/>
         </methods>
-      </class> <!-- com.TestCases.OrangeHRM_Login_TestCase -->
+      </class> <!-- com.TestCases.DataDriven_Class -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
